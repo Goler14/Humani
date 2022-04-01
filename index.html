@@ -32,8 +32,80 @@
                 </ul>
               </div>
             </div>
+            <!-- overwiev gombok -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+              Belépés
+            </button>
+            <button type="button" class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#aboutmodal">
+              Névjegy
+            </button>
           </nav>
         <h1>Humani</h1>
+    </div>
+
+
+    <!-- login modal  -->
+    <div class="modal" id="LoginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Felhasználónév</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Jelszó</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+            <button type="button" class="btn btn-primary">Belépés</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- névjegy modal -->
+    <div class="modal" id="aboutmodal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Névjegy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+              <!-- Névjegy kárty(card) -->
+            <div class="card" style="width: 18rem;">
+              <img src="images/logo.png" class="card-img-top" alt="Humani logo"> <!--itt megadjuk a képet-->
+              <div class="card-body">
+                <h5 class="card-title">Humani</h5>
+                <p class="card-text">Dolgozó nyilvántartó</p>
+                <p class="card-text">Verzió: 0.1</p>
+                <a href="https://github.com/Goler14/Humani" 
+                target="_blank" 
+                class="btn btn-primary">Github</a><!--külön ablakban nyilik meg ez a sor miatt (target="_blank") -->
+              </div>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
     </div>
     
 </body>
